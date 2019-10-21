@@ -8,4 +8,18 @@
 
 .navbar-lg {
   background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.hero-buttons,
+.f-left,
+.f-right {
+  justify-content: right;
+}
+
+.hero-buttons div,
+.f-right div {
+  border-radius: 50px;
 }

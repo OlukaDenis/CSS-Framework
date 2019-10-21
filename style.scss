@@ -1,6 +1,6 @@
 // TYPEFONTS STUFF
 $content-color-font: #202121;
-$base-font-family: "apercu",sans-serif;
+$base-font-family: "apercu", sans-serif;
 
 // COLOR SCHEME
 $red: #ff4e4e;
@@ -15,7 +15,7 @@ $grid__bp-lg: 1020;
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: border-box;
 }
 
@@ -71,6 +71,7 @@ $map-grid-props: (
 }
 
 $max: 50;
+$max-width: 100;
 $offset: 5;
 $unit: "px"; // Feel free to change the unit.
 @mixin list-loop($className, $styleName) {
@@ -94,6 +95,17 @@ $unit: "px"; // Feel free to change the unit.
 @include list-loop(".p-b-", "padding-bottom");
 @include list-loop(".p-l-", "padding-left");
 @include list-loop(".p-x-", "padding");
+
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max-width {
+    #{$className + $i} {
+      #{$styleName}: #{$i * 1%};
+    }
+    $i: $i + $offset;
+  }
+}
+@include list-loop(".w-", "width");
 
 @mixin button-bg($bg) {
   background: $bg;
