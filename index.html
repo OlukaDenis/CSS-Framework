@@ -6,24 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Awwwards - Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <style media="screen">
-      *{
+      * {
         border: 1px solid red !important;
       }
     </style>
   </head>
   <body>
-    <div class="container__fluid">
+    <header class="top-header container--fluid">
       <div class="row">
-        <div class="element">1</div>
-        <div class="element">2</div>
-        <div class="element">3</div>
-        <div class="element">4</div>
-        <div class="element">5</div>
-        <div class="element">6</div>
-        <div class="element">7</div>
-        <div class="element">8</div>
+        <div class="col-lg-2">
+          <p>ENGLISH</p>
+        </div>
+        <div class="col-lg-8">
+          <h2>
+            The awards of design, creativity and innovation on the internet
+          </h2>
+        </div>
+        <div class="col-lg-2">
+          <ul class="social-icons row">
+            <li class="icon-link"><i class="fab fa-instagram"></i></li>
+            <li class="icon-link"><i class="fab fa-twitter"></i></li>
+            <li class="icon-link"><i class="fab fa-facebook-square"></i></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
+
+    <nav class="navbar-lg container--fluid col-lg-12">
+      <div class="row">
+        <div class="col-lg-2">
+          <ul class="row">
+            <li><i class="fas fa-menu"></i></li>
+            <li><a href="#">MENU</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-1">
+          <ul class="row">
+            <li><i class="fas fa-menu"></i></li>
+          </ul>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-lg-9">
+              <img src="logo.svg" alt="logo" />
+            </div>
+            <div class="col-lg-3">
+              <a href="#">REGISTER/LOGIN</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <a href="#">SUBMIT YOUR SITE</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/859eff7750.js"></script>
   </body>
 </html>
