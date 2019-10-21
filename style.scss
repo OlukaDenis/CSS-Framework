@@ -1,13 +1,26 @@
+// TYPEFONTS STUFF
+$content-color-font: #202121;
+$base-font-family: "apercu",sans-serif;
+
+// COLOR SCHEME
 $red: #ff4e4e;
 $light-green: #49c5b6;
 $light-blue: #9fd2d6;
 $orange: #ff8601;
 $light-grey: #f4f7f6;
 
+// BREAKPOINTS
 $grid__bp-md: 720;
-$grid__bp-lg: 1024;
+$grid__bp-lg: 1020;
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
 .container {
-  max-width: $grid__bp-md * 1px;
+  min-width: $grid__bp-lg * 1px;
   margin: 0 auto;
   &--fluid {
     margin: 0;
@@ -100,6 +113,10 @@ $unit: "px"; // Feel free to change the unit.
   border-radius: 3px;
   font-family: "Poiret One", cursive;
   font-size: 2em;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .btn-green {

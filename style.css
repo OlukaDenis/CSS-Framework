@@ -1,5 +1,10 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
 .container {
-  max-width: 720px;
+  min-width: 1020px;
   margin: 0 auto; }
   .container--fluid {
     margin: 0;
@@ -86,7 +91,7 @@
 
   .col-md-12 {
     flex-basis: 100%; } }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   .col-lg-1 {
     flex-basis: 8.3333333333%; }
 
@@ -458,7 +463,11 @@
   padding: 5px 10px;
   border-radius: 3px;
   font-family: "Poiret One", cursive;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer; }
 
 .btn-green {
   background: #49c5b6; }
