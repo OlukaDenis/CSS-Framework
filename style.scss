@@ -1,0 +1,119 @@
+$red: #ff4e4e;
+$light-green: #49c5b6;
+$light-blue: #9fd2d6;
+$orange: #ff8601;
+$light-grey: #f4f7f6;
+
+$grid__bp-md: 720;
+$grid__bp-lg: 1024;
+.container {
+  max-width: $grid__bp-md * 1px;
+  margin: 0 auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+$grid__cols: 12;
+@mixin create-mq($breakpoint) {
+  @if ($breakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (min-width: $breakpoint * 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin create-col-classes($modifier, $grid__cols, $breakpoint) {
+  @include create-mq($breakpoint) {
+    @for $i from 1 through $grid__cols {
+      .col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid__cols / $i)) * 1%;
+      }
+    }
+  }
+}
+
+$map-grid-props: (
+  "-sm": 0,
+  "-md": $grid__bp-md,
+  "-lg": $grid__bp-lg
+);
+
+@each $modifier, $breakpoint in $map-grid-props {
+  @include create-col-classes($modifier, $grid__cols, $breakpoint);
+}
+
+$max: 50;
+$offset: 5;
+$unit: "px"; // Feel free to change the unit.
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+// Margins
+@include list-loop(".m-t-", "margin-top");
+@include list-loop(".m-r-", "margin-right");
+@include list-loop(".m-b-", "margin-bottom");
+@include list-loop(".m-l-", "margin-left");
+@include list-loop(".m-x-", "margin");
+// Paddings
+@include list-loop(".p-t-", "padding-top");
+@include list-loop(".p-r-", "padding-right");
+@include list-loop(".p-b-", "padding-bottom");
+@include list-loop(".p-l-", "padding-left");
+@include list-loop(".p-x-", "padding");
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+}
+
+.btn-green {
+  @include button-bg($light-green);
+}
+
+.btn-blue {
+  @include button-bg($light-blue);
+}
+
+.btn-orange {
+  @include button-bg($orange);
+}
+
+.btn-red {
+  @include button-bg($red);
+}
