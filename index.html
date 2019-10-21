@@ -7,6 +7,7 @@
     <title>Awwwards - Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
     <style media="screen">
       * {
         border: 1px solid red !important;
@@ -14,6 +15,7 @@
     </style>
   </head>
   <body>
+    <!-- NAVBAR -->
     <header class="top-header container--fluid">
       <div class="row">
         <div class="col-lg-2">
@@ -34,20 +36,20 @@
       </div>
     </header>
 
-    <nav class="navbar-lg container--fluid col-lg-12">
+    <nav class="fixed navbar-lg container--fluid col-lg-12 ">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-1">
           <ul class="row">
-            <li><i class="fas fa-menu"></i></li>
+            <li><i class="fas fa-bars"></i></li>
             <li><a href="#">MENU</a></li>
           </ul>
         </div>
         <div class="col-lg-1">
           <ul class="row">
-            <li><i class="fas fa-menu"></i></li>
+            <li><i class="fas fa-search"></i></li>
           </ul>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-8">
           <div class="row">
             <div class="col-lg-9">
               <img src="logo.svg" alt="logo" />
@@ -57,13 +59,23 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <div>
             <a href="#">SUBMIT YOUR SITE</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <p class="hero-date"><strong>Site of the Day</strong> October 21, 2019</p>
+      <div class="hero-info">
+        <h2 class="title">Lagute & Laguta</h2>
+        <p>BY <span>ALEXANDER LAGUTA</span> FROM <strong>RUSSIA</strong> with 7.53</p>
+      </div>
+    </header>
+
     <script src="https://kit.fontawesome.com/859eff7750.js"></script>
   </body>
 </html>

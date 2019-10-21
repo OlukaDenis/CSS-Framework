@@ -1,0 +1,11 @@
+.hero {
+  margin-top: 5px;
+  height: 100vh;
+  background: url(https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2019/10/laguta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-lg {
+  background-color: white;
+}

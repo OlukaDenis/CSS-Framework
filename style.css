@@ -501,4 +501,13 @@
   .btn-red:active {
     background: #ce0000; }
 
+.fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1; }
+
+.w-100 {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */

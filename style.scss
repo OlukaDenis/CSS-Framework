@@ -134,3 +134,14 @@ $unit: "px"; // Feel free to change the unit.
 .btn-red {
   @include button-bg($red);
 }
+
+.fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.w-100 {
+  width: 100%;
+}
