@@ -222,3 +222,7 @@ li.sociallink {
   font-size: 14px;
   padding: 0 10px;
 }
+
+footer .col-lg-3 strong{
+  padding: 0 10px;
+}
