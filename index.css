@@ -1,3 +1,7 @@
+root {
+  font-family: "apercu",sans-serif;
+}
+
 .hero {
   margin-top: 5px;
   height: 100vh;
@@ -22,4 +26,72 @@
 .hero-buttons div,
 .f-right div {
   border-radius: 50px;
+}
+
+strong {
+  color: #202121;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* .hb-left:first-child {
+  position: relative;
+  left: 5px;
+} */
+
+.hb-left:last-child {
+  position: relative;
+  left: 210px;
+}
+
+.card-info a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #202121;
+  font-weight: 700;
+  display: block;
+}
+
+.card-footer {
+  font-size: 12px;
+}
+
+.card-footer img {
+  width: 27px;
+  height: 27px;
+  border-radius: 50px;
+}
+
+.card-footer strong {
+  font-size: 14px;
+}
+
+.btn {
+  font-size: 10px;
+}
+
+div.container--fluid.center{
+  margin-bottom: 50px;
+}
+
+footer, footer strong:not(footer .row:first-child) {
+  font-size: 14px;
+}
+
+footer .row:first-child {
+  font-size: 18px;
+}
+
+li.footer-link {
+  padding-right: 10px;
+}
+
+li.footer-link strong,
+.footer-social strong {
+  font-size: 14px;
+}
+
+li.sociallink {
+  font-size: 14px;
+  padding: 0 10px;
 }
