@@ -21,8 +21,12 @@
 .row {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-around;
 }
+=======
+  justify-content: space-between; }
+>>>>>>> middleToBottomStyling
 
 .col-sm-1 {
   flex-basis: 8.3333333333%;
@@ -781,6 +785,7 @@
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .w-100 {
   width: 100%;
 }
@@ -788,5 +793,9 @@
 .text-black {
   color: black;
 }
+=======
+.center {
+  margin: 0 auto; }
+>>>>>>> middleToBottomStyling
 
 /*# sourceMappingURL=style.css.map */
