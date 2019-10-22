@@ -8,6 +8,9 @@ body {
 
 strong {
   font-weight: 800;
+  color: #202121;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .top-header .row {
@@ -19,6 +22,10 @@ strong {
 .top-header > div {
   text-align: center;
   color: #202121;
+}
+
+.hero-info p {
+  font-size: 1.1rem;
 }
 
 .top-header .row p {
@@ -37,13 +44,6 @@ strong {
 .f-left,
 .f-right {
   justify-content: right;
-}
-
-.hero {
-  height: 100vh;
-  background: url(https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2019/10/laguta.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .navbar-lg,
@@ -78,6 +78,20 @@ strong {
   font-weight: bold;
 }
 
+.green-bg a {
+  color: white;
+  padding: 25px;
+  font-size: 0.9rem;
+}
+
+.card-info a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #202121;
+  font-weight: 700;
+  display: block;
+}
+
 .register-login a:hover {
   color: #555;
 }
@@ -89,20 +103,16 @@ strong {
   justify-content: center;
 }
 
-.green-bg a {
-  /* position: absolute; */
-  color: white;
-  padding: 25px;
-  font-size: 0.9rem;
-}
-
 .hero {
+  height: 90vh;
+  background: url(https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2019/10/laguta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   color: white;
-  height: 490px;
 }
 
 .hero-buttons {
@@ -132,17 +142,26 @@ strong {
   padding-top: 80px;
 }
 
-.hero-info p {
-  font-size: 1.1rem;
-}
-
 .hero-info p span {
   color: #49c5b6;
+}
+
+.card-footer strong {
+  font-size: 14px;
+}
+
+.footer-social strong,
+li.footer-link strong {
+  font-size: 14px;
 }
 
 .hero-info p strong {
   color: white;
   font-size: 1.1rem;
+}
+
+.btn {
+  font-size: 10px;
 }
 
 .hero-buttons .btn {
@@ -155,28 +174,9 @@ strong {
   border-radius: 50px;
 }
 
-strong {
-  color: #202121;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-/* .hb-left:first-child {
-  position: relative;
-  left: 5px;
-} */
-
 .hb-left:last-child {
   position: relative;
   left: 210px;
-}
-
-.card-info a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #202121;
-  font-weight: 700;
-  display: block;
 }
 
 .card-footer {
@@ -189,16 +189,12 @@ strong {
   border-radius: 50px;
 }
 
-.card-footer strong {
-  font-size: 14px;
-}
-
-.btn {
-  font-size: 10px;
-}
-
 div.container--fluid.center {
   margin-bottom: 50px;
+}
+
+footer .col-lg-3 strong {
+  padding: 0 10px;
 }
 
 footer,
@@ -214,16 +210,7 @@ li.footer-link {
   padding-right: 10px;
 }
 
-li.footer-link strong,
-.footer-social strong {
-  font-size: 14px;
-}
-
 li.sociallink {
   font-size: 14px;
-  padding: 0 10px;
-}
-
-footer .col-lg-3 strong {
   padding: 0 10px;
 }
