@@ -6,6 +6,35 @@ strong {
   font-weight: 800;
 }
 
+.top-header .row {
+  height: 70px;
+  border-bottom: 1px solid #e6eaea;
+  align-items: center;
+}
+
+.top-header > div {
+  text-align: center;
+  color: #202121;
+}
+
+.top-header .row p {
+  text-decoration: underline solid #999;
+  cursor: pointer;
+}
+
+.social-icons {
+  justify-content: flex-end;
+}
+
+.icon-link {
+  padding-right: 0.7rem;
+}
+
+.f-left,
+.f-right {
+  justify-content: right;
+}
+
 .hero {
   height: 100vh;
   background: url(https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2019/10/laguta.jpg);
@@ -19,6 +48,24 @@ strong {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+}
+
+.navbar-lg .row {
+  height: 70px;
+  align-items: center;
+}
+
+.navbar-md {
+  height: 70px;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar-md .row {
+  height: 70px;
+  align-items: center;
 }
 
 .logo {
@@ -36,6 +83,7 @@ strong {
 .register-login a:hover {
   color: #555;
 }
+
 .green-bg {
   background-color: #49c5b6;
   height: 70px;
@@ -44,9 +92,10 @@ strong {
 }
 
 .green-bg a {
-  position: absolute;
+  /* position: absolute; */
   color: white;
   padding: 25px;
+  font-size: 0.9rem;
 }
 
 .hero {
@@ -90,35 +139,6 @@ strong {
 .hero-buttons .btn {
   padding: 18px;
   font-size: 1rem;
-}
-
-.top-header .row {
-  height: 70px;
-  border-bottom: 1px solid #e6eaea;
-  align-items: center;
-}
-
-.top-header > div {
-  text-align: center;
-  color: #202121;
-}
-
-.top-header .row p {
-  text-decoration: underline solid #999;
-  cursor: pointer;
-}
-
-.social-icons {
-  justify-content: flex-end;
-}
-
-.icon-link {
-  padding-right: 0.7rem;
-}
-
-.f-left,
-.f-right {
-  justify-content: right;
 }
 
 .hero-buttons div,
