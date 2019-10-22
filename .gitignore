@@ -1,3 +1,4 @@
-# .gitignore
-# *.scss
-# *.map
+.gitignore
+/.sass-cache
+*.scss
+*.map
