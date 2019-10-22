@@ -36,7 +36,7 @@ $grid__bp-lg: 1020;
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 $grid__cols: 12;
@@ -154,8 +154,8 @@ $unit: "px"; // Feel free to change the unit.
   z-index: 1;
 }
 
-.w-100 {
-  width: 100%;
+.center {
+  margin: 0 auto;
 }
 
 .text-black {
