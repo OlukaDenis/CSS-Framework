@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css" />
     <style media="screen">
       * {
-        border: 1px solid red !important;
+        /* border: 1px solid red !important; */
       }
     </style>
   </head>
@@ -30,7 +30,9 @@
           <ul class="social-icons row">
             <li class="icon-link"><i class="fab fa-instagram"></i></li>
             <li class="icon-link"><i class="fab fa-twitter"></i></li>
-            <li class="icon-link"><i class="fab fa-facebook-square"></i></li>
+            <li class="icon-link">
+              <i class="fab fa-facebook-square"></i>
+            </li>
           </ul>
         </div>
       </div>
@@ -41,7 +43,7 @@
         <div class="col-lg-1">
           <ul class="row">
             <li><i class="fas fa-bars"></i></li>
-            <li><a href="#">MENU</a></li>
+            <li><a class="text-black" href="#">MENU</a></li>
           </ul>
         </div>
         <div class="col-lg-1">
@@ -51,16 +53,16 @@
         </div>
         <div class="col-lg-8">
           <div class="row">
-            <div class="col-lg-9">
+            <div class="logo col-lg-9">
               <img src="logo.svg" alt="logo" />
             </div>
-            <div class="col-lg-3">
-              <a href="#">REGISTER/LOGIN</a>
+            <div class="register-login col-lg-3">
+              <a class="text-black" href="#">REGISTER/LOGIN</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
-          <div>
+        <div class=" col-lg-2">
+          <div class="green-bg">
             <a href="#">SUBMIT YOUR SITE</a>
           </div>
         </div>
@@ -69,18 +71,21 @@
 
     <!-- HERO -->
     <header class="hero">
-      <p class="hero-date"><strong>Site of the Day</strong> October 21, 2019</p>
-      <div class="hero-info">
-        <h2 class="title">Lagute & Laguta</h2>
-        <p>
-          BY <span>ALEXANDER LAGUTA</span> FROM <strong>RUSSIA</strong> with
-          7.53
+      <div class="hero-center">
+        <p class="hero-date p-t-25">
+          <strong>Site of the Day</strong> October 21, 2019
         </p>
+        <div class="hero-info ">
+          <h2 class="title">Lagute & Laguta</h2>
+          <p class="p-t-10">
+            BY <span>ALEXANDER LAGUTA</span> FROM <strong>RUSSIA</strong> with
+            7.53
+          </p>
+        </div>
       </div>
-
-      <div class="hero-buttons row">
-        <div class="w-10 btn btn-blue m-r-5">Visit site</div>
-        <div class="w-10 btn btn-red m-r-5">Visit site</div>
+      <div class="hero-buttons p-b-50 row">
+        <div class="w-10 btn btn-green m-r-5">Visit site</div>
+        <div class="w-10 btn btn-red m-r-5">Collect</div>
       </div>
     </header>
 
@@ -124,9 +129,11 @@
           </div>
         </div>
         <div class="card col-lg-4">
-          <img class="card-image"
+          <img
+            class="card-image"
             src="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/10/5d937ce9d3c71788118848.png"
-            alt="image" />
+            alt="image"
+          />
           <div class="card-info">
             <a href="#">Karel Komárek Family Fdn.</a>
             <div class="info-meta row">
@@ -137,8 +144,10 @@
 
           <div class="card-footer row">
             <div class="f-left row">
-              <img src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/235816/58ef996a46578.png"
-                alt="image" />
+              <img
+                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/235816/58ef996a46578.png"
+                alt="image"
+              />
               <p>BY CREATIVE NIGHTS</p>
             </div>
             <div class="f-right row">
@@ -148,9 +157,11 @@
           </div>
         </div>
         <div class="card col-lg-4">
-          <img class="card-image"
+          <img
+            class="card-image"
             src="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/10/5d937ce9d3c71788118848.png"
-            alt="image" />
+            alt="image"
+          />
           <div class="card-info">
             <a href="#">Karel Komárek Family Fdn.</a>
             <div class="info-meta row">
@@ -161,8 +172,10 @@
 
           <div class="card-footer row">
             <div class="f-left row">
-              <img src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/235816/58ef996a46578.png"
-                alt="image" />
+              <img
+                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/235816/58ef996a46578.png"
+                alt="image"
+              />
               <p>BY CREATIVE NIGHTS</p>
             </div>
             <div class="f-right row">
@@ -177,10 +190,13 @@
     <footer class="container--fluid">
       <div class="row">
         <div class="col-lg-9">
-          <p class="footer-text">The awards for design, creativity and innovation on the Internet</p>
+          <p class="footer-text">
+            The awards for design, creativity and innovation on the Internet
+          </p>
         </div>
         <div class="col-lg-3">
-          <p class="footer-text">Next Conferences</p><i></i><strong>New York</strong> and <strong>Tokyo</strong>
+          <p class="footer-text">Next Conferences</p>
+          <i></i><strong>New York</strong> and <strong>Tokyo</strong>
         </div>
       </div>
       <div class="row">
