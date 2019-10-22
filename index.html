@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <header class="top-header container--fluid">
+    <header class="top-header container--fluid d-lg-block d-md-none d-sm-none">
       <div class="row">
         <div class="col-lg-2">
           <p>ENGLISH</p>
@@ -38,12 +38,14 @@
       </div>
     </header>
 
-    <nav class="fixed navbar-lg container--fluid col-lg-12 ">
+    <nav
+      class="navbar-lg d-lg-block d-md-none d-sm-none container--fluid col-lg-12 fixed "
+    >
       <div class="row">
         <div class="col-lg-1">
           <ul class="row">
             <li><i class="fas fa-bars"></i></li>
-            <li><a class="text-black" href="#">MENU</a></li>
+            <li><a class="text-black " href="#">MENU</a></li>
           </ul>
         </div>
         <div class="col-lg-1">
@@ -65,6 +67,28 @@
           <div class="green-bg">
             <a href="#">SUBMIT YOUR SITE</a>
           </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="fixed navbar-md d-lg-none container--fluid col-md-12 ">
+      <div class="row">
+        <div class="col-lg-2 ">
+          <ul class="row">
+            <li><i class="fas fa-bars"></i></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="logo">
+              <img src="logo.svg" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <ul class="row">
+            <li><i class="fas fa-search"></i></li>
+          </ul>
         </div>
       </div>
     </nav>
