@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #f4f7f6;
+}
+
 strong {
   font-weight: 800;
 }
@@ -42,25 +46,19 @@ strong {
   background-size: cover;
 }
 
-.navbar-lg {
+.navbar-lg,
+.navbar-md {
   height: 70px;
-  background-color: white;
+  background-color: #f4f7f6;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  border-bottom: 1px solid #e6eaea;
 }
 
 .navbar-lg .row {
   height: 70px;
   align-items: center;
-}
-
-.navbar-md {
-  height: 70px;
-  background-color: white;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
 }
 
 .navbar-md .row {
@@ -123,6 +121,11 @@ strong {
   font-size: 1rem;
 }
 
+.hero-date strong {
+  color: white;
+  font-size: 1rem;
+}
+
 .hero-info .title {
   font-size: 3.1rem;
   font-weight: 900;
@@ -134,6 +137,11 @@ strong {
 }
 .hero-info p span {
   color: #49c5b6;
+}
+
+.hero-info p strong {
+  color: white;
+  font-size: 1.1rem;
 }
 
 .hero-buttons .btn {
@@ -188,11 +196,12 @@ strong {
   font-size: 10px;
 }
 
-div.container--fluid.center{
+div.container--fluid.center {
   margin-bottom: 50px;
 }
 
-footer, footer strong:not(footer .row:first-child) {
+footer,
+footer strong:not(footer .row:first-child) {
   font-size: 14px;
 }
 
