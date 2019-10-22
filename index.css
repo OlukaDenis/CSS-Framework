@@ -135,6 +135,7 @@ strong {
 .hero-info p {
   font-size: 1.1rem;
 }
+
 .hero-info p span {
   color: #49c5b6;
 }
@@ -223,6 +224,6 @@ li.sociallink {
   padding: 0 10px;
 }
 
-footer .col-lg-3 strong{
+footer .col-lg-3 strong {
   padding: 0 10px;
 }
