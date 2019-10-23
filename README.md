@@ -12,7 +12,7 @@ Read more about the project detailed description from the [Odin website](https:/
 
 ### [Assingment Link](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
-### [Live link]()
+### [Live link](https://rawcdn.githack.com/OlukaDenis/CSS-Framework/57201b8e1b2e39da7ecb5cc08e856563611b2354/index.html)
 
 # Languages Used
 
